@@ -7,9 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./assets/img/logos/logo152.jpg" type="image/png" />
     <title>Mi portfolio</title>
-    <meta name="description" content="Pagina web orientada a mostrar mis habilidades y trabajos realizados">
+    <meta name="description" content="Pagina web destinada a mostrar mis habilidades y trabajos realizados">
     <meta name="author" content="Claudio Falabella Malone" />
     <meta name="robots" content="index" />
+
+    <link rel="preload" href="./style.css" as="style">
     <link rel="stylesheet" href="./styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
@@ -33,9 +35,6 @@
             font: 14px 'Popins', Helvetica, Arial, sans-serif;
         }
     </style>
-
-    <!-- Template Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet">
 
 </head>
 
@@ -102,7 +101,7 @@
 
             <div class="contenido-seccion" data-aos="fade-up">
                 <div class="seccion__imagen">
-                    <img src="./assets/img/oficina.webp" alt="Imagen de nuestra oficina">
+                    <img loading="lazy" src="./assets/img/oficina.webp" alt="Imagen de nuestra oficina">
                 </div>
 
                 <div class="seccion__texto">
