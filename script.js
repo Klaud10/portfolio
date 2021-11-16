@@ -37,6 +37,37 @@ function myFunction(){
 
 // ====================================================================
 
+// ___Paralaje del Título___
+
+// (function(){
+
+//   const scroller = document.querySelector('.cabecera');
+//   const thumb = document.querySelector('.titulo__principal');
+//   const scrollerHeight = scroller.getBoundingClientRect().height;
+
+//   thumb.style.height =
+//     scrollerHeight * scrollerHeight / scroller.scrollHeight + 'px';
+//   // Accommodate for native scrollbars
+//   thumb.style.right =
+//     (scroller.clientWidth - scroller.getBoundingClientRect().width) + 'px';
+//   const factor =
+//     (scrollerHeight - thumbHeight)/(scroller.scrollHeight - scrollerHeight);
+//   thumb.style.transform = `
+//     matrix3d(
+//       1, 0, 0, 0,
+//       0, 1, 0, 0,
+//       0, 0, 1, 0,
+//       0, 0, 0, -1
+//     )
+//     scale(${1/factor})
+//     translateZ(${1 - 1/factor}px)
+//     translateZ(-2px)
+//   `;
+
+// })();
+
+// ====================================================================
+
 // ___Fecha del copyriright___
 (function() {
     let fecha = new Date();
@@ -65,3 +96,6 @@ function myFunction(){
      window.addEventListener('load', toggleBacktotop)
      onscroll(document, toggleBacktotop)
    }
+
+// =====================================================================
+

@@ -11,19 +11,26 @@
     <meta name="author" content="Claudio Falabella Malone" />
     <meta name="robots" content="index" />
 
-    <link rel="preload" href="./style.css" as="style">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="preload" href="/styles.css" as="style">
+    <link rel="stylesheet" href="/styles.css">
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
     <!-- Vendor CSS Files -->
+    <link rel="preload" href="assets/vendor/aos/aos.css" as="style">
     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link rel="preload" href="assets/vendor/bootstrap/css/bootstrap.min.css" as="style">
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preload" href="assets/vendor/bootstrap-icons/bootstrap-icons.css" as="style">
     <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link rel="preload" href="assets/vendor/boxicons/css/boxicons.min.css" as="style">
     <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link rel="preload" href="assets/vendor/glightbox/css/glightbox.min.css" as="style">
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link rel="preload" href="assets/vendor/swiper/swiper-bundle.min.css" as="style">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
     <!-- Formulario de MailChimp -->
@@ -86,370 +93,400 @@
             </a>
         </nav>
 
+        <div class="titulo__principal">
+            <h1 class="titulo__principal-nombre">Claudio Falabella</h1>
+        </div>
+
+        <span class="spacer"></span>
+
+
+
     </header>
 
-    <section id="nosotros" class="sobremi contenedor">
-        <div class="contenedor">
-            <div class="subtitulo" data-aos="fade-up">
-                <h2>Acerca de</h2>
+    <main>
+
+        <section id="nosotros" class="sobremi contenedor">
+            <div class="contenedor">
+                <div class="subtitulo" data-aos="fade-up">
+                    <h2>Acerca de</h2>
+                </div>
+                <p class="subtitulo-parrafo" data-aos="fade-up">Magnam dolores commodi suscipit. Necessitatibus eius
+                    consequatur
+                    ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo
+                    qui
+                    impedit
+                    suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+
+                <div class="contenido-seccion" data-aos="fade-up">
+                    <div class="seccion__imagen">
+                        <img loading="lazy" src="./assets/img/oficina.webp" alt="Imagen de nuestra oficina">
+                    </div>
+
+                    <div class="seccion__texto">
+                        <h3>Diseño y desarrolo Web</h3>
+                        <p class="subtitulo-parrafo" data-aos="fade-up">
+                            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.
+                            Sit
+                            sint
+                            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
+                            Quia fugiat
+                            sit in iste officiis commodi quidem hic quas.
+                        </p>
+                    </div>
+                </div>
+                <!--contenido-seccion-->
             </div>
-            <p class="subtitulo-parrafo" data-aos="fade-up">Magnam dolores commodi suscipit. Necessitatibus eius
-                consequatur
-                ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui
-                impedit
-                suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            <!--.contenedor-->
+        </section>
 
-            <div class="contenido-seccion" data-aos="fade-up">
-                <div class="seccion__imagen">
-                    <img loading="lazy" src="./assets/img/oficina.webp" alt="Imagen de nuestra oficina">
+        <!-- ======= Portfolio Section ======= -->
+        <section id="portfolio" class="portfolio section-bg contenedor">
+            <div data-aos="fade-up">
+
+                <div class="section-title">
+                    <h2>Portfolio</h2>
+                    <p class="subtitulo-parrafo">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
+                        aliquid
+                        fuga eum quidem. Sit
+                        sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
+                        ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
                 </div>
 
-                <div class="seccion__texto">
-                    <h3>Diseño y desarrolo Web</h3>
-                    <p class="subtitulo-parrafo" data-aos="fade-up">
-                        Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
-                        sint
-                        consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-                        Quia fugiat
-                        sit in iste officiis commodi quidem hic quas.
-                    </p>
-                </div>
-            </div>
-            <!--contenido-seccion-->
-        </div>
-        <!--.contenedor-->
-    </section>
-
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg contenedor">
-        <div data-aos="fade-up">
-
-            <div class="section-title">
-                <h2>Portfolio</h2>
-                <p class="subtitulo-parrafo">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid
-                    fuga eum quidem. Sit
-                    sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                    ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-                    <ul id="portfolio-flters">
-                        <li data-filter="*" class="filter-active">All</li>
-                        <li data-filter=".filter-app">App</li>
-                        <li data-filter=".filter-web">Web</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                    <div class="portfolio-wrap">
-                        <img src="assets/img/portfolio/webcamp.webp" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>Web</h4>
-                            <p>Web-webcamp</p>
-                            <div class="portfolio-links">
-                                <a href="https://falabellawebcamp.netlify.app" class="portfolio-details-lightbox"
-                                    data-glightbox="type: external" title="Portfolio Details"><i
-                                        class="bx bx-link"></i></a>
-                            </div>
-                        </div>
+                <div class="row">
+                    <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+                        <ul id="portfolio-flters">
+                            <li data-filter="*" class="filter-active">All</li>
+                            <li data-filter=".filter-app">App</li>
+                            <li data-filter=".filter-web">Web</li>
+                        </ul>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                    <div class="portfolio-wrap">
-                        <img src="assets/img/portfolio/App-Salón-de-Belleza.webp" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>App</h4>
-                            <p>App-Salon de belleza</p>
-                            <div class="portfolio-links">
+                <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
-                                <a href="https://salonpeluqueria.netlify.app/" class="portfolio-details-lightbox"
-                                    data-glightbox="type: external" title="Portfolio Details"><i
-                                        class="bx bx-link"></i></a>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/portfolio/webcamp.webp" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Web</h4>
+                                <p>Web-webcamp</p>
+                                <div class="portfolio-links">
+                                    <a href="https://falabellawebcamp.netlify.app" class="portfolio-details-lightbox"
+                                        data-glightbox="type: external" title="Portfolio Details"><i
+                                            class="bx bx-link"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                    <div class="portfolio-wrap">
-                        <img src="assets/img/portfolio/Bienes-raices.webp" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>Web</h4>
-                            <p>Web-Bienes Raices</p>
-                            <div class="portfolio-links">
-                                <a href="assets/img/portfolio/Bienes-raices.webp" data-gallery="portfolioGallery"
-                                    class="portfolio-lightbox" title="Web-Bienes Raices"><i class="bx bx-plus"></i></a>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/portfolio/App-Salón-de-Belleza.webp" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>App</h4>
+                                <p>App-Salon de belleza</p>
+                                <div class="portfolio-links">
 
+                                    <a href="https://salonpeluqueria.netlify.app/" class="portfolio-details-lightbox"
+                                        data-glightbox="type: external" title="Portfolio Details"><i
+                                            class="bx bx-link"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                    <div class="portfolio-wrap">
-                        <img src="assets/img/portfolio/Blog-de-Café.webp" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>Web</h4>
-                            <p>Web-Blog de Cafe</p>
-                            <div class="portfolio-links">
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/portfolio/Bienes-raices.webp" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Web</h4>
+                                <p>Web-Bienes Raices</p>
+                                <div class="portfolio-links">
+                                    <a href="assets/img/portfolio/Bienes-raices.webp" data-gallery="portfolioGallery"
+                                        class="portfolio-lightbox" title="Web-Bienes Raices"><i
+                                            class="bx bx-plus"></i></a>
 
-                                <a href="https://blogdecafeina.netlify.app/" class="portfolio-details-lightbox"
-                                    data-glightbox="type: external" title="Portfolio Details"><i
-                                        class="bx bx-link"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                    <div class="portfolio-wrap">
-                        <img src="assets/img/portfolio/Menu.webp" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>Web</h4>
-                            <p>Web-Menu bar </p>
-                            <div class="portfolio-links">
-                                <a href="https://menubarqr.netlify.app" class="portfolio-details-lightbox"
-                                    data-glightbox="type: external" title="Portfolio Details"><i
-                                        class="bx bx-link"></i></a>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/portfolio/Blog-de-Café.webp" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Web</h4>
+                                <p>Web-Blog de Cafe</p>
+                                <div class="portfolio-links">
+
+                                    <a href="https://blogdecafeina.netlify.app/" class="portfolio-details-lightbox"
+                                        data-glightbox="type: external" title="Portfolio Details"><i
+                                            class="bx bx-link"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                    <div class="portfolio-wrap">
-                        <img src="assets/img/portfolio/Rock-EDM-Festival.webp" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>Web</h4>
-                            <p>Web-RockFestival</p>
-                            <div class="portfolio-links">
-                                <a href="https://musicfestivalweb.netlify.app" class="portfolio-details-lightbox"
-                                    data-glightbox="type: external" title="Portfolio Details"><i
-                                        class="bx bx-link"></i></a>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/portfolio/Menu.webp" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Web</h4>
+                                <p>Web-Menu bar </p>
+                                <div class="portfolio-links">
+                                    <a href="https://menubarqr.netlify.app" class="portfolio-details-lightbox"
+                                        data-glightbox="type: external" title="Portfolio Details"><i
+                                            class="bx bx-link"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                    <div class="portfolio-wrap">
-                        <img src="assets/img/portfolio/Counter-App.webp" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>App</h4>
-                            <p>App-contador</p>
-                            <div class="portfolio-links">
-
-                                <a href="https://contadorapp.netlify.app" class="portfolio-details-lightbox"
-                                    data-glightbox="type: external" title="Portfolio Details"><i
-                                        class="bx bx-link"></i></a>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/portfolio/Rock-EDM-Festival.webp" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Web</h4>
+                                <p>Web-RockFestival</p>
+                                <div class="portfolio-links">
+                                    <a href="https://musicfestivalweb.netlify.app" class="portfolio-details-lightbox"
+                                        data-glightbox="type: external" title="Portfolio Details"><i
+                                            class="bx bx-link"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                    <div class="portfolio-wrap">
-                        <img src="assets/img/portfolio/citas.webp" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>App</h4>
-                            <p>App-Pacientes de veterinaria</p>
-                            <div class="portfolio-links">
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/portfolio/Counter-App.webp" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>App</h4>
+                                <p>App-contador</p>
+                                <div class="portfolio-links">
 
-                                <a href="https://dogandcat.netlify.app" class="portfolio-details-lightbox"
-                                    data-glightbox="type: external" title="Portfolio Details"><i
-                                        class="bx bx-link"></i></a>
+                                    <a href="https://contadorapp.netlify.app" class="portfolio-details-lightbox"
+                                        data-glightbox="type: external" title="Portfolio Details"><i
+                                            class="bx bx-link"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                    <div class="portfolio-wrap">
-                        <img src="assets/img/portfolio/Busca-Clima.webp" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>App</h4>
-                            <p>App-Buscador de climas</p>
-                            <div class="portfolio-links">
-                                <a href="https://buscaclima.netlify.app/" class="portfolio-details-lightbox"
-                                    data-glightbox="type: external" title="Portfolio Details"><i
-                                        class="bx bx-link"></i></a>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/portfolio/citas.webp" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>App</h4>
+                                <p>App-Pacientes de veterinaria</p>
+                                <div class="portfolio-links">
+
+                                    <a href="https://dogandcat.netlify.app" class="portfolio-details-lightbox"
+                                        data-glightbox="type: external" title="Portfolio Details"><i
+                                            class="bx bx-link"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                    <div class="portfolio-wrap">
-                        <img src="assets/img/portfolio/Cotizar-Criptomonedas.webp" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>App</h4>
-                            <p>App-Cotización de Criptomonedas</p>
-                            <div class="portfolio-links">
-                                <a href="https://criptochange.netlify.app/" class="portfolio-details-lightbox"
-                                    data-glightbox="type: external" title="Portfolio Details"><i
-                                        class="bx bx-link"></i></a>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/portfolio/Busca-Clima.webp" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>App</h4>
+                                <p>App-Buscador de climas</p>
+                                <div class="portfolio-links">
+                                    <a href="https://buscaclima.netlify.app/" class="portfolio-details-lightbox"
+                                        data-glightbox="type: external" title="Portfolio Details"><i
+                                            class="bx bx-link"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/portfolio/Cotizar-Criptomonedas.webp" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>App</h4>
+                                <p>App-Cotización de Criptomonedas</p>
+                                <div class="portfolio-links">
+                                    <a href="https://criptochange.netlify.app/" class="portfolio-details-lightbox"
+                                        data-glightbox="type: external" title="Portfolio Details"><i
+                                            class="bx bx-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
+        </section><!-- Fin sección PORTFOLIO -->
 
-        </div>
-    </section><!-- Fin sección PORTFOLIO -->
-
-    <!-- Inicio del contacto -->
-    <section id="contacto" class="contenedor">
-        <div class="subtitulo" data-aos="fade-up"">
+        <!-- Inicio del contacto -->
+        <section id="contacto" class="contenedor">
+            <div class="subtitulo" data-aos="fade-up"">
       <h2 id=" servicios">Contacto</h2>
-        </div>
+            </div>
 
-        <div class="contenedor-contacto">
+            <div class="contenedor-contacto">
 
-            <div class="contenedor-contacto__micontacto">
+                <div class="contenedor-contacto__micontacto">
 
-                <div class="info" data-aos="fade-up">
-                    <i class="bi bi-geo-alt"></i>
-                    <div class="personales">
-                        <h3>Localidad:</h3>
-                        <p>Santa Cruz de Tenerife</p>
+                    <div class="info" data-aos="fade-up">
+                        <i class="bi bi-geo-alt"></i>
+                        <div class="personales">
+                            <h3>Localidad:</h3>
+                            <p>Santa Cruz de Tenerife</p>
+                        </div>
                     </div>
-                </div>
 
-                <div class="info" data-aos="fade-up"">
+                    <div class="info" data-aos="fade-up"">
                     <i class=" bi bi-envelope"></i>
-                    <div class="personales">
-                        <a href="mailto:claudio.falabella@gmail.com?Subject=Información%20sobre%20páginas%20web">
-                            <h3>E-mail:</h3>
-                            <p>claudio.falabella@gmail.com</p>
-                        </a>
+                        <div class="personales">
+                            <a href="mailto:claudio.falabella@gmail.com?Subject=Información%20sobre%20páginas%20web">
+                                <h3>E-mail:</h3>
+                                <p>claudio.falabella@gmail.com</p>
+                            </a>
+                        </div>
                     </div>
+
+                    <div class="info" data-aos="fade-up"">
+                    <i class=" bi bi-phone"></i>
+                        <div class="personales">
+                            <a href="tel:+34678447365">
+                                <h3>Teléfono:</h3>
+                                <p>+34 678 447 365</p>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="redes redes-pie" data-aos="fade-up">
+
+                        <a href="https://api.whatsapp.com/send?phone=+34678447365&text=Hola" target="_blank"><i
+                                class='pie-iconos bx bxl-whatsapp'></i></a>
+
+                        <a href="https://t.me/Clawd10" target="_blank"><i class='pie-iconos bx bxl-telegram'></i></a>
+
+                        <a href="https://github.com/Klaud10" target="_blank"><i
+                                class='pie-iconos bx bxl-github'></i></a>
+
+                    </div>
+
+
                 </div>
 
-                <div class="info" data-aos="fade-up"">
-        <i class=" bi bi-phone"></i>
-                    <div class="personales">
-                        <a href="tel:+34678447365">
-                            <h3>Teléfono:</h3>
-                            <p>+34 678 447 365</p>
-                        </a>
-                    </div>
+                <!-- Inicio Mailchimp Signup Form -->
+
+                <div id="mc_embed_signup" data-aos="fade-up">
+                    <form
+                        action="https://app.us1.list-manage.com/subscribe/post?u=4d2f362ab0fdea70be24cbdd3&amp;id=698f6f3e58"
+                        method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                        target="_blank" novalidate>
+                        <div id="mc_embed_signup_scroll">
+
+                            <div class="indicates-required"><span class="asterisk">*</span> Campos obligatorios</div>
+
+                            <div class="migrupo">
+                                <div class="mc-field-group migrupo-label">
+                                    <label for="mce-FNAME">Nombre </label>
+                                    <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+                                </div>
+
+                                <div class="mc-field-group migrupo-label">
+                                    <label for="mce-LNAME">Apellido </label>
+                                    <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+                                </div>
+                            </div>
+
+                            <div class="mc-field-group">
+                                <label for="mce-EMAIL">E-mail <span class="asterisk">*</span>
+                                </label>
+                                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                            </div>
+
+
+
+                            <div class="mc-field-group size1of2">
+                                <label for="mce-BIRTHDAY-month">Cumpleaños </label>
+                                <div class="datefield">
+                                    <span class="subfield monthfield"><input class="birthday " type="text"
+                                            pattern="[0-9]*" value="" placeholder="MM" size="2" maxlength="2"
+                                            name="BIRTHDAY[month]" id="mce-BIRTHDAY-month"></span> /
+                                    <span class="subfield dayfield"><input class="birthday " type="text"
+                                            pattern="[0-9]*" value="" placeholder="DD" size="2" maxlength="2"
+                                            name="BIRTHDAY[day]" id="mce-BIRTHDAY-day"></span>
+                                    <span class="small-meta nowrap">( mm / dd )</span>
+                                </div>
+                            </div>
+                            <div class="mc-field-group">
+                                <label for="mce-MMERGE3">Comentario <span class="asterisk">*</span> </label>
+                                <textarea type="text" value="" name="MMERGE3" class="comentario-crf" id="mce-MMERGE3"
+                                    rows="8"></textarea>
+                            </div>
+                            <div id="mce-responses" class="clear">
+                                <div class="response" id="mce-error-response" style="display:none"></div>
+                                <div class="response" id="mce-success-response" style="display:none"></div>
+                            </div>
+                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                                    name="b_4d2f362ab0fdea70be24cbdd3_698f6f3e58" tabindex="-1" value=""></div>
+                            <div class="clear"><input type="submit" value="Enviar" name="subscribe"
+                                    id="mc-embedded-subscribe" class="button"></div>
+                        </div>
+                    </form>
                 </div>
-
             </div>
+            <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+            <script type='text/javascript'>
+                (function ($) {
+                    window.fnames = new Array();
+                    window.ftypes = new Array();
+                    fnames[0] = 'EMAIL';
+                    ftypes[0] = 'email';
+                    fnames[1] = 'FNAME';
+                    ftypes[1] = 'text';
+                    fnames[2] = 'LNAME';
+                    ftypes[2] = 'text';
+                    fnames[5] = 'BIRTHDAY';
+                    ftypes[5] = 'birthday';
+                    fnames[3] = 'MMERGE3';
+                    ftypes[3] = 'text';
+                    /*
+                     * Translated default messages for the $ validation plugin.
+                     * Locale: ES
+                     */
+                    $.extend($.validator.messages, {
+                        required: "Este campo es obligatorio.",
+                        remote: "Por favor, rellena este campo.",
+                        email: "Por favor, escribe una dirección de correo válida",
+                        url: "Por favor, escribe una URL válida.",
+                        date: "Por favor, escribe una fecha válida.",
+                        dateISO: "Por favor, escribe una fecha (ISO) válida.",
+                        number: "Por favor, escribe un número entero válido.",
+                        digits: "Por favor, escribe sólo dígitos.",
+                        creditcard: "Por favor, escribe un número de tarjeta válido.",
+                        equalTo: "Por favor, escribe el mismo valor de nuevo.",
+                        accept: "Por favor, escribe un valor con una extensión aceptada.",
+                        maxlength: $.validator.format("Por favor, no escribas más de {0} caracteres."),
+                        minlength: $.validator.format("Por favor, no escribas menos de {0} caracteres."),
+                        rangelength: $.validator.format(
+                            "Por favor, escribe un valor entre {0} y {1} caracteres."),
+                        range: $.validator.format("Por favor, escribe un valor entre {0} y {1}."),
+                        max: $.validator.format("Por favor, escribe un valor menor o igual a {0}."),
+                        min: $.validator.format("Por favor, escribe un valor mayor o igual a {0}.")
+                    });
+                }(jQuery));
+                var $mcj = jQuery.noConflict(true);
+            </script>
+            <!--End mc_embed_signup-->
 
-            <!-- Inicio Mailchimp Signup Form -->
+        </section>
+        <!-- Fin del contacto -->
 
-            <div id="mc_embed_signup" data-aos="fade-up">
-                <form
-                    action="https://app.us1.list-manage.com/subscribe/post?u=4d2f362ab0fdea70be24cbdd3&amp;id=698f6f3e58"
-                    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
-                    target="_blank" novalidate>
-                    <div id="mc_embed_signup_scroll">
-
-                        <div class="indicates-required"><span class="asterisk">*</span> Campos obligatorios</div>
-
-                        <div class="migrupo">
-                            <div class="mc-field-group migrupo-label">
-                                <label for="mce-FNAME">Nombre </label>
-                                <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
-                            </div>
-
-                            <div class="mc-field-group migrupo-label">
-                                <label for="mce-LNAME">Apellido </label>
-                                <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
-                            </div>
-                        </div>
-
-                        <div class="mc-field-group">
-                            <label for="mce-EMAIL">E-mail <span class="asterisk">*</span>
-                            </label>
-                            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-                        </div>
-
-
-
-                        <div class="mc-field-group size1of2">
-                            <label for="mce-BIRTHDAY-month">Cumpleaños </label>
-                            <div class="datefield">
-                                <span class="subfield monthfield"><input class="birthday " type="text" pattern="[0-9]*"
-                                        value="" placeholder="MM" size="2" maxlength="2" name="BIRTHDAY[month]"
-                                        id="mce-BIRTHDAY-month"></span> /
-                                <span class="subfield dayfield"><input class="birthday " type="text" pattern="[0-9]*"
-                                        value="" placeholder="DD" size="2" maxlength="2" name="BIRTHDAY[day]"
-                                        id="mce-BIRTHDAY-day"></span>
-                                <span class="small-meta nowrap">( mm / dd )</span>
-                            </div>
-                        </div>
-                        <div class="mc-field-group">
-                            <label for="mce-MMERGE3">Comentario <span class="asterisk">*</span> </label>
-                            <textarea type="text" value="" name="MMERGE3" class="comentario-crf" id="mce-MMERGE3"
-                                rows="8"></textarea>
-                        </div>
-                        <div id="mce-responses" class="clear">
-                            <div class="response" id="mce-error-response" style="display:none"></div>
-                            <div class="response" id="mce-success-response" style="display:none"></div>
-                        </div>
-                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
-                                name="b_4d2f362ab0fdea70be24cbdd3_698f6f3e58" tabindex="-1" value=""></div>
-                        <div class="clear"><input type="submit" value="Enviar" name="subscribe"
-                                id="mc-embedded-subscribe" class="button"></div>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-        <script type='text/javascript'>
-            (function ($) {
-                window.fnames = new Array();
-                window.ftypes = new Array();
-                fnames[0] = 'EMAIL';
-                ftypes[0] = 'email';
-                fnames[1] = 'FNAME';
-                ftypes[1] = 'text';
-                fnames[2] = 'LNAME';
-                ftypes[2] = 'text';
-                fnames[5] = 'BIRTHDAY';
-                ftypes[5] = 'birthday';
-                fnames[3] = 'MMERGE3';
-                ftypes[3] = 'text';
-                /*
-                 * Translated default messages for the $ validation plugin.
-                 * Locale: ES
-                 */
-                $.extend($.validator.messages, {
-                    required: "Este campo es obligatorio.",
-                    remote: "Por favor, rellena este campo.",
-                    email: "Por favor, escribe una dirección de correo válida",
-                    url: "Por favor, escribe una URL válida.",
-                    date: "Por favor, escribe una fecha válida.",
-                    dateISO: "Por favor, escribe una fecha (ISO) válida.",
-                    number: "Por favor, escribe un número entero válido.",
-                    digits: "Por favor, escribe sólo dígitos.",
-                    creditcard: "Por favor, escribe un número de tarjeta válido.",
-                    equalTo: "Por favor, escribe el mismo valor de nuevo.",
-                    accept: "Por favor, escribe un valor con una extensión aceptada.",
-                    maxlength: $.validator.format("Por favor, no escribas más de {0} caracteres."),
-                    minlength: $.validator.format("Por favor, no escribas menos de {0} caracteres."),
-                    rangelength: $.validator.format(
-                        "Por favor, escribe un valor entre {0} y {1} caracteres."),
-                    range: $.validator.format("Por favor, escribe un valor entre {0} y {1}."),
-                    max: $.validator.format("Por favor, escribe un valor menor o igual a {0}."),
-                    min: $.validator.format("Por favor, escribe un valor mayor o igual a {0}.")
-                });
-            }(jQuery));
-            var $mcj = jQuery.noConflict(true);
-        </script>
-        <!--End mc_embed_signup-->
-
-    </section>
-    <!-- Fin del contacto -->
+    </main>
 
     <!-- Inicio del FOOTER -->
     <footer class="piepagina-crf">

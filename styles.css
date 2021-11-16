@@ -39,22 +39,18 @@ body {
 }
 
 .contenedor{
-    width: 98%;
+    width: 95%;
     margin: 0 auto;
   }
-  @media (min-width: 480px){
-    .contenedor{
-      width: 100%;
-    }
-  }
+  
   @media (min-width: 768px) {
     .contenedor{
-      width: 95%;
+      width: 90%;
     }    
   }
   @media (min-width: 992px) {
     .contenedor{
-      width: 90%;
+      width: 85%;
       max-width: 1100px;
     }
   }
@@ -125,9 +121,10 @@ ul {
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     vertical-align: top;
+    overflow: hidden;
 }
 
 a {
@@ -216,14 +213,26 @@ a {
 /* ===Estilos del Header=== */
 
 .cabecera {
-    background-image: var(--gradient), url(/assets/img/office.webp);
-    background-position: center right;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    overflow: hidden;
-    position: relative;
+  /* background-attachment: fixed; */
+  background-image: var(--gradient), url(/assets/img/office.webp);
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
 }
+
+.titulo__principal {
+  border: 2px solid red;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+
+
+
 
 /*__estilos de la hamburguesa__*/
 .navegacion__movil {
@@ -368,6 +377,8 @@ a {
 }
 
 /* ___MAIN___ */
+
+
 section {
     padding: 10rem 0 0 0;
     overflow: hidden;
@@ -427,7 +438,8 @@ section .subtitulo-parrafo {
 
 /* ___Estilos del Portfolio___ */
 i {
-    font-size: 3rem;
+    /* margin-top: 2rem; */
+    font-size: 4rem;
 }
 
 .portfolio .portfolio-item {
@@ -581,6 +593,14 @@ i {
 .portfolio .portfolio-wrap:hover .portfolio-info::after {
   bottom: 15px;
   right: 15px;
+}
+
+div.redes {
+  margin: 3rem;
+}
+
+div.redes a i {
+  color: var(--letras);
 }
 
 /* _____FORMULARIO________ */
