@@ -218,7 +218,7 @@ a {
 /* ===Estilos del Header=== */
 
 .cabecera {
-  background-image: url(./assets/img/office.webp);
+  background-image: var(--gradient), url(assets/img/office.webp);
   background-position: center right;
   background-repeat: no-repeat;
   background-size: cover;
