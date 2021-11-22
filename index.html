@@ -5,19 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./assets/img/logos/logo152.jpg" type="image/png" />
+    <link rel="icon" href="./assets/img/logos/azulLogotipo.png" type="image/png" />
     <title>Mi portfolio</title>
     <meta name="description" content="Pagina web destinada a mostrar mis habilidades y trabajos realizados">
     <meta name="author" content="Claudio Falabella Malone" />
     <meta name="robots" content="index" />
 
-    <link rel="preload" href="/styles.css" as="style">
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira:wght@900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap"
         rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- Vendor CSS Files -->
     <link rel="preload" href="assets/vendor/aos/aos.css" as="style">
@@ -56,50 +66,44 @@
         </div>
 
         <nav id="myDIV" class="menuppal">
-
             <a href="#cabecera" class="item" onclick="myFunction()">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-house-door" viewBox="0 0 16 16">
-                    <path
-                        d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z" />
-                </svg>
+                <i class="bi bi-house-door"></i>
                 Inicio
             </a>
             <a href="#nosotros" class="item" onclick="myFunction()">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person"
-                    viewBox="0 0 16 16">
-                    <path
-                        d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
-                </svg>
+                <i class="bi bi-person"></i>
                 Nosotros
             </a>
             <a class="item" href="#portfolio" onclick="myFunction()">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-file-earmark-code" viewBox="0 0 16 16">
-                    <path
-                        d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z" />
-                    <path
-                        d="M8.646 6.646a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 9 8.646 7.354a.5.5 0 0 1 0-.708zm-1.292 0a.5.5 0 0 0-.708 0l-2 2a.5.5 0 0 0 0 .708l2 2a.5.5 0 0 0 .708-.708L5.707 9l1.647-1.646a.5.5 0 0 0 0-.708z" />
-                </svg>
+                <i class="bi bi-journals"></i>
                 Portfolio
             </a>
             <a class="item" href="#contacto" onclick="myFunction()">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-envelope" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
-                </svg>
+                <i class="bi bi-envelope"></i>
                 Contacto
             </a>
         </nav>
 
         <div class="titulo__principal">
-            <h1 class="titulo__principal-nombre">Claudio Falabella</h1>
+            <div class="titulo">
+                <h1 class="titulo__principal-nombre">Claudio Falabella</h1>
+                <p class="titulo__principal-subtitulo">
+                    <a href="" class="typewrite" data-period="2000" data-type='[ "Frelancer", "Creative", "Designer", "Developer" ]'>
+                        <span class="wrap"></span>
+                    </a>
+                </p>
+            </div>
+            <div class="redes redes-pie">
+
+                <a href="https://api.whatsapp.com/send?phone=+34678447365&text=Hola" target="_blank"><i
+                        class='pie-iconos bx bxl-whatsapp'></i></a>
+
+                <a href="https://t.me/Clawd10" target="_blank"><i class='pie-iconos bx bxl-telegram'></i></a>
+
+                <a href="https://github.com/Klaud10" target="_blank"><i class='pie-iconos bx bxl-github'></i></a>
+
+            </div>
         </div>
-
-        <span class="spacer"></span>
-
-
 
     </header>
 
