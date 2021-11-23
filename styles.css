@@ -243,7 +243,7 @@ a {
   position: absolute;
   top: 35%;
   width: 100%;
-  z-index: 1000;
+  z-index: 10;
 }
 
 @media (min-width: 768px) {
