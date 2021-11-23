@@ -13,7 +13,7 @@
     --oscuro: #292F33;
     --negro: #000000;
     --letras: #45505B;  
-    --gradient: linear-gradient(320deg, rgba(200, 200, 200, 0.8), rgba(255, 255, 255, 0.5));
+    --gradient: linear-gradient(320deg, rgba(200, 200, 200, 0.5), rgba(255, 255, 255, 0.8));
     --shadow:  8px 8px 21px #c4c4c4,
               -8px -8px 21px #ffffff;
     --bg-gradient: linear-gradient(145deg, #dadada, #ffffff);
@@ -218,27 +218,32 @@ a {
 /* ===Estilos del Header=== */
 
 .cabecera {
-  background-image: var(--gradient), url(assets/img/office.webp);
-  background-position: center right;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: var(--bg-gradient); 
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   overflow: hidden;
   position: relative;
-
 }
 
-@media (min-width: 768px) {
-  .cabecera {
-    background-attachment: fixed;
-  }
+.cabecera .video {
+  height: 100%;
+  width: auto;
+  overflow: hidden;
+}
+
+.cabecera .video video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  background: var(--bg-gradient);
 }
 
 .titulo__principal {
   position: absolute;
   top: 35%;
   width: 100%;
+  z-index: 1000;
 }
 
 @media (min-width: 768px) {
@@ -269,10 +274,10 @@ a {
 }
 
 .titulo__principal-nombre {
-  /* border: 2px solid green; */
   font-family:var(--titulos);
   font-size: 2rem;
   margin-left: 3rem;
+  z-index: 1000;
 }
 
 .titulo__principal-nombre::before {
@@ -293,16 +298,11 @@ a {
   }
 }
 
-/* .titulo__principal-subtitulo {
-  border: 2px solid blue;
-} */
-
 .titulo__principal-subtitulo .typewrite {
-  /* border: 2px solid black; */
   font-size: 4rem;
   font-family: var(--saira);
   letter-spacing: .25rem;
-  -webkit-text-stroke: 2px var(--activo);
+  -webkit-text-stroke: 2px var(--hover);
   color: transparent; 
   margin-left: 3rem;
 }
@@ -315,13 +315,11 @@ a {
 }
 
 .titulo__principal .redes {
-  /* border: 2px solid black; */
   width: 85%;
 }
 
 @media (min-width: 768px) {
   .titulo__principal .redes {
-    /* border: 2px solid red; */
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr;
@@ -330,7 +328,6 @@ a {
   }    
 }
 
-/*__estilos de la hamburguesa__*/
 .navegacion__movil {
     cursor: pointer;
     display: block;
@@ -511,18 +508,23 @@ section .subtitulo-parrafo {
   .seccion__texto p {
     text-align: center;
   }
+
+  .seccion__texto h3 {
+    font-weight: 500;
+  }
   
   @media (min-width: 768px) {
     .seccion__texto h3 {
-        text-align: left;
-        padding-left: 1rem;
         margin-top: 0;
-      }
+        padding-left: 1rem;
+        text-align: left;
+    }
       .seccion__texto p {
         text-align: left;
         padding: 0 1rem;
-      }
+    }
   }
+
   @media (min-width: 768px) {
     div.contenido-seccion {
       display: grid;
@@ -783,10 +785,6 @@ form{
     background-color: var(--oscuro);
   }
   
-  /* .pie-crf li {
-    border: 2px solid red;
-  } */
-  
   @media (min-width: 768px) {
       .pie-crf { 
         display: grid;
@@ -854,41 +852,43 @@ form{
   }
 
 
-  /* ===Estilos de la política cookies === */
+/* ===Estilos de la política cookies === */
+
+.cookies {
+  margin-bottom: 3rem;
+}
   
-  @keyframes desaparecer
-  {
+@keyframes desaparecer {
   0%		{bottom: 0px;}
   80%		{bottom: 0px;}
   100%		{bottom: -50px;}
-  }
+}
    
-  @-webkit-keyframes desaparecer /* Safari and Chrome */
-  {
+@-webkit-keyframes desaparecer { /* Safari and Chrome */
   0%		{bottom: 0px;}
   80%		{bottom: 0px;}
   100%		{bottom: -50px;}
-  }
+}
    
-  @keyframes aparecer
-  {
+@keyframes aparecer {
   0%		{bottom: -38px;}
   10%		{bottom: 0px;}
   90%		{bottom: 0px;}
   100%		{bottom: -38px;}
-  }
+}
    
-  @-webkit-keyframes aparecer /* Safari and Chrome */
-  {
+@-webkit-keyframes aparecer { /* Safari and Chrome */
   0%		{bottom: -38px;}
   10%		{bottom: 0px;}
   90%		{bottom: 0px;}
   100%		{bottom: -38px;}
-  }
-  #cookiesms1:target {
+}
+  
+#cookiesms1:target {
       display: none;
   }
-  .cookiesms{	
+  
+.cookiesms {	
     width:100%;
     height:43px;
     margin:0 auto;
@@ -910,12 +910,13 @@ form{
   -moz-box-shadow:    3px -3px 1px rgba(50, 50, 50, 0.56);
   box-shadow:         3px -3px 1px rgba(50, 50, 50, 0.56);
   z-index:999999999;
-  }
+}
    
-  .cookiesms:hover{
+.cookiesms:hover {
   bottom:0px;
-  }
-  .cookies2{
+}
+  
+.cookies2 {
   background-color: #FFF;
   display:inline;
   opacity:0.95;
@@ -936,9 +937,8 @@ form{
   -webkit-box-shadow: 3px -3px 1px rgba(50, 50, 50, 0.56);
   -moz-box-shadow:    3px -3px 1px rgba(50, 50, 50, 0.56);
   box-shadow:         3px -3px 1px rgba(50, 50, 50, 0.56);
-  }
+}
    
-  /* Fin del CSS para cookies */
     
 
 

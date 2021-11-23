@@ -93,7 +93,7 @@ function myFunction() {
     // INJECT CSS
     let css = document.createElement("style");
     css.type = "text/css";
-    css.innerHTML = ".typewrite > .wrap { border-right: 0.35rem solid #093864}";
+    css.innerHTML = ".typewrite > .wrap { border-right: 0.35rem solid #0563BB}";
     document.body.appendChild(css);
   };
 })();
