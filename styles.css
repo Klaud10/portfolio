@@ -16,6 +16,10 @@
     --gradient: linear-gradient(320deg, rgba(200, 200, 200, 0.5), rgba(255, 255, 255, 0.8));
     --shadow:  8px 8px 21px #c4c4c4,
               -8px -8px 21px #ffffff;
+    --bg-gradient: -moz-linear-gradient(145deg, #dadada, #ffffff);
+    --bg-gradient: -webkit-linear-gradient(145deg, #dadada, #ffffff);
+    --bg-gradient: -o-linear-gradient(145deg, #dadada, #ffffff);
+    --bg-gradient: -ms-linear-gradient(145deg, #dadada, #ffffff);
     --bg-gradient: linear-gradient(145deg, #dadada, #ffffff);
   }
 
@@ -223,6 +227,7 @@ a {
   width: 100vw;
   overflow: hidden;
   position: relative;
+  z-index: 10;
 }
 
 .cabecera .video {
@@ -236,7 +241,6 @@ a {
   width: 100%;
   object-fit: cover;
   overflow: hidden;
-  background: var(--bg-gradient);
 }
 
 .titulo__principal {
@@ -274,14 +278,15 @@ a {
 }
 
 .titulo__principal-nombre {
+  color: var(--oscuro);
   font-family:var(--titulos);
   font-size: 2rem;
-  margin-left: 3rem;
+  margin-left: 5rem;
   z-index: 1000;
 }
 
 .titulo__principal-nombre::before {
-  background: var(--letras);
+  background: var(--oscuro);
   content: "";
   display: inline-block;
   height: 3px;
@@ -304,7 +309,7 @@ a {
   letter-spacing: .25rem;
   -webkit-text-stroke: 2px var(--hover);
   color: transparent; 
-  margin-left: 3rem;
+  margin-left: 5rem;
 }
 
 @media (min-width: 768px) {
@@ -326,6 +331,18 @@ a {
 
     width: 25%;
   }    
+}
+
+.flecha {
+  position: absolute;
+  bottom: 15vh;
+  left: 50%;
+  z-index: 10;
+}
+
+.flecha a i {
+  color: var(--oscuro);
+  font-size: 3rem;
 }
 
 .navegacion__movil {
