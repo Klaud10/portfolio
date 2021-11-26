@@ -4,7 +4,13 @@
   --enlaces: "Nunito", sans-serif;
   --saira: "Saira", sans-serif;
 
-  --naranja: #fe4918;
+  --bg-html: #E54F26;
+  --bg-css: #0C73B8;
+  /* --bg-js: #EAB308; */
+  --bg-js: #E4B00E;
+  --bg-react: #0EA5E9;
+
+
   --hover: #0563bb;
   --activo: #093864;
   --bg: #f1f5f9;
@@ -543,7 +549,7 @@ section .subtitulo-parrafo {
 @media (min-width: 768px) {
   div.contenido-seccion {
     display: grid;
-    grid-template-columns: 2fr 3fr;
+    grid-template-columns: 1fr 1fr;
     gap: 5rem;
   }
   div.seccion__imagen img {
@@ -551,9 +557,92 @@ section .subtitulo-parrafo {
   }
 }
 
+/* ___Estilos del card___ */
+.card-body {
+  background-color: #0EA5E9;
+}
+
+.card-body .card-title, .card-text {
+  color: var(--claro);
+}
+
+.card-body .card-title {
+  margin-bottom: 3rem;
+}
+
+.card-body .card-text {
+  padding-bottom: 6rem;  
+}
+
+/* ___Estilos de habiliades___ */
+
+/* .habilidades { */
+  /* border: 2px solid red; */
+/* } */
+
+.habilidades__contenido {
+  margin-top: 10rem;
+  
+}
+
+@media (min-width: 768px) {
+  .habilidades__contenido {
+    /* border: 2px solid green; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+  }
+}
+
+.habilidades__contenido-img {
+  /* border: 2px solid blue; */
+  margin: 3rem auto;
+  border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+  .habilidades__contenido-img{
+    width: 100%;
+  }
+}
+
+.habilidades__contenido-img:first-child {
+  background-color: var(--bg-html);
+}
+.habilidades__contenido-img:nth-child(2) {
+  background-color: var(--bg-css);
+}
+.habilidades__contenido-img:nth-child(3) {
+  background-color: var(--bg-js);
+}
+.habilidades__contenido-img:last-child {
+  background-color: var(--bg-react);
+}
+
+.habilidades__contenido-img img {
+  /* border: 2px solid black; */
+  border-radius: 50%;
+  display: block;
+  background-color: var(--claro);
+  margin: 5rem auto;
+  max-width: 35%;
+  width: 10rem;
+  height: auto;
+  text-align: center;
+}
+
+.habilidades__contenido-img p {
+  /* border: 2px solid blueviolet; */
+  font-size: 1.8rem !important;
+  font-weight: bold;
+  color: var(--claro);
+  text-align: center;
+  margin-bottom: 4rem;
+
+}
+
 /* ___Estilos del Portfolio___ */
 i {
-  /* margin-top: 2rem; */
   font-size: 4rem;
 }
 
