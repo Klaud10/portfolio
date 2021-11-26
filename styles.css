@@ -595,7 +595,7 @@ section .subtitulo-parrafo {
 }
 
 .habilidades__contenido-img {
-  /* border: 2px solid blue; */
+  border: 2px solid transparent;
   margin: 3rem auto;
   border-radius: 5px;
 }
