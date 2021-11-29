@@ -30,6 +30,13 @@
   --bg-gradient: -o-linear-gradient(145deg, #dadada, #ffffff);
   --bg-gradient: -ms-linear-gradient(145deg, #dadada, #ffffff);
   --bg-gradient: linear-gradient(145deg, #dadada, #ffffff);
+
+  --separador-gradient:-moz-linear-gradient(90deg, rgba(241, 245, 249, 1) 0%, rgba(255, 255, 255, 0.5) 60%, rgba(255, 255, 255, 0) 100%); 
+  --separador-gradient:-webkit-linear-gradient(90deg, rgba(241, 245, 249, 1) 0%, rgba(255, 255, 255, 0.5) 60%, rgba(255, 255, 255, 0) 100%);
+  --separador-gradient:-o-linear-gradient(90deg, rgba(241, 245, 249, 1) 0%, rgba(255, 255, 255, 0.5) 60%, rgba(255, 255, 255, 0) 100%);
+  --separador-gradient:-ms-linear-gradient(90deg, rgba(241, 245, 249, 1) 0%, rgba(255, 255, 255, 0.5) 60%, rgba(255, 255, 255, 0) 100%);
+  --separador-gradient:linear-gradient(90deg, rgba(241, 245, 249, 1) 0%, rgba(255, 255, 255, 0.5) 60%, rgba(255, 255, 255, 0) 100%);
+
 }
 
 /* ===Globales=== */
@@ -566,7 +573,7 @@ section .subtitulo-parrafo {
 
 /* ___Estilos del card___ */
 .card-body {
-  background-color: #0EA5E9;
+  background-color: var(--bg-react);
 }
 
 .card-body .card-title, .card-text {
@@ -711,36 +718,59 @@ section .subtitulo-parrafo {
 /* ___Estilos del Separador___ */
 
 .separador::before {
-  background-attachment: fixed;     
-  background-image: url(assets/img/teclado.webp);
+  background-attachment: fixed;
+  background-image: var(--separador-gradient), url(assets/img/teclado.webp);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
   content: '';
   position: absolute;
   top: 0;
   left: 0;
   height: 75vh;
-  width: 100vw;
-  filter: brightness(.8);
+  width: 100vw;  
 }
 
 .separador {
+  /* border: 2px solid blue; */
   position: relative;
-  height: 100%;  
+  height: 100%; 
 }
 
-.logo {
+.separador__contenido {
+  /* border: 2px solid black; */
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3rem;
   height: 25%;
   position: relative;
-  bottom: 4.5rem;
-  left: 65%;
-  width: 25%;
+  bottom: 5rem;
+  left: 10%;
+  width: 85%;
+  padding: 10rem 0;
 }
 
-.logo img {
+.separador__contenido-logo {
+  /* border: 2px solid red; */
+  width: 50%;
+}
+
+.separador__contenido-logo img {
   max-width: 100%;
   height: auto;
+}
+
+/* .separador__contenido-texto h4, .parrafo {
+  border: 2px solid green;
+} */
+
+.separador__contenido-texto .parrafo {
+  display: block;
+  width: 100%;
 }
 
 
