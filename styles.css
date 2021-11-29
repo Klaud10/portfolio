@@ -508,12 +508,12 @@ section .subtitulo-parrafo {
   width: 100% !important;
 }
 
-.sobremi {
-  /* border: 2px solid red; */
+/* .sobremi {
+  border: 2px solid red;
   background-image: url(assets/img/logos/azulLogotipo.png);
   background-repeat: no-repeat;
   background-position: bottom right;
-}
+} */
 
 .contenido-seccion {
   width: 100%;
@@ -605,7 +605,7 @@ section .subtitulo-parrafo {
     /* border: 2px solid green; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 3rem;
+    gap: 0rem 3rem;
   }
 }
 
@@ -621,16 +621,16 @@ section .subtitulo-parrafo {
   }
   
   .habilidades__contenido-img:first-child {
-    margin-bottom: 8rem;
+    margin-bottom: 14rem;
   }
   .habilidades__contenido-img:nth-child(2){
-    margin-top: 8rem;
+    margin-top: 14rem;
   }
   .habilidades__contenido-img:nth-child(3){
-    margin-bottom: 8rem;
+    margin-bottom: 14rem;
   }
   .habilidades__contenido-img:last-child {
-    margin-top: 8rem;
+    margin-top: 14rem;
   }
 }
 
@@ -707,6 +707,42 @@ section .subtitulo-parrafo {
   text-align: center;
   width: 80%;
 }
+
+/* ___Estilos del Separador___ */
+
+.separador::before {
+  background-attachment: fixed;     
+  background-image: url(assets/img/teclado.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 75vh;
+  width: 100vw;
+  filter: brightness(.8);
+}
+
+.separador {
+  position: relative;
+  height: 100%;  
+}
+
+.logo {
+  height: 25%;
+  position: relative;
+  bottom: 4.5rem;
+  left: 65%;
+  width: 25%;
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+}
+
 
 /* ___Estilos del Portfolio___ */
 i {
