@@ -342,10 +342,10 @@ a {
 @media (min-width: 768px) {
   .titulo__principal .redes {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1rem;
+    grid-template-rows: repeat(4, 1fr);
     grid-template-columns: 1fr;
-
-    width: 25%;
+    width: 50%;
   }
 }
 
@@ -955,6 +955,8 @@ div.redes {
 div.redes a i {
   color: var(--letras);
 }
+
+
 
 /* _____FORMULARIO________ */
 
