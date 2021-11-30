@@ -31,11 +31,11 @@
   --bg-gradient: -ms-linear-gradient(145deg, #dadada, #ffffff);
   --bg-gradient: linear-gradient(145deg, #dadada, #ffffff);
 
-  --separador-gradient:-moz-linear-gradient(90deg, rgba(241, 245, 249, 1) 0%, rgba(255, 255, 255, 0.5) 60%, rgba(255, 255, 255, 0) 100%); 
-  --separador-gradient:-webkit-linear-gradient(90deg, rgba(241, 245, 249, 1) 0%, rgba(255, 255, 255, 0.5) 60%, rgba(255, 255, 255, 0) 100%);
-  --separador-gradient:-o-linear-gradient(90deg, rgba(241, 245, 249, 1) 0%, rgba(255, 255, 255, 0.5) 60%, rgba(255, 255, 255, 0) 100%);
-  --separador-gradient:-ms-linear-gradient(90deg, rgba(241, 245, 249, 1) 0%, rgba(255, 255, 255, 0.5) 60%, rgba(255, 255, 255, 0) 100%);
-  --separador-gradient:linear-gradient(90deg, rgba(241, 245, 249, 1) 0%, rgba(255, 255, 255, 0.5) 60%, rgba(255, 255, 255, 0) 100%);
+  --separador-gradient:-moz-linear-gradient(90deg, rgba(241, 245, 249, 1) 0%, rgba(255, 255, 255, 0.75) 45%, rgba(255, 255, 255, 0) 100%); 
+  --separador-gradient:-webkit-linear-gradient(90deg, rgba(241, 245, 249, 1) 0%, rgba(255, 255, 255, 0.75) 45%, rgba(255, 255, 255, 0) 100%);
+  --separador-gradient:-o-linear-gradient(90deg, rgba(241, 245, 249, 1) 0%, rgba(255, 255, 255, 0.75) 45%, rgba(255, 255, 255, 0) 100%);
+  --separador-gradient:-ms-linear-gradient(90deg, rgba(241, 245, 249, 1) 0%, rgba(255, 255, 255, 0.75) 45%, rgba(255, 255, 255, 0) 100%);
+  --separador-gradient:linear-gradient(90deg, rgba(241, 245, 249, 1) 0%, rgba(255, 255, 255, 0.75) 45%, rgba(255, 255, 255, 0) 100%);
 
 }
 
@@ -719,7 +719,7 @@ section .subtitulo-parrafo {
 
 .separador::before {
   background-attachment: fixed;
-  background-image: var(--separador-gradient), url(assets/img/teclado.webp);
+  background-image: var(--separador-gradient), url(assets/img/escritoriooscuro.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -731,12 +731,13 @@ section .subtitulo-parrafo {
   position: absolute;
   top: 0;
   left: 0;
-  height: 75vh;
+  height: 100%;
   width: 100vw;  
 }
 
 .separador {
   /* border: 2px solid blue; */
+  margin-top: 10rem;
   position: relative;
   height: 100%; 
 }
@@ -745,18 +746,31 @@ section .subtitulo-parrafo {
   /* border: 2px solid black; */
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 3rem;
+  gap: 1rem;
   height: 25%;
   position: relative;
   bottom: 5rem;
   left: 10%;
   width: 85%;
-  padding: 10rem 0;
+  padding: 5rem 0;
+}
+
+@media (min-width: 768px) {
+  .separador__contenido {
+    gap: 3rem;
+  }
 }
 
 .separador__contenido-logo {
   /* border: 2px solid red; */
-  width: 50%;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .separador__contenido-logo {
+    /* border: 2px solid blueviolet; */
+    width: 60%;
+  }
 }
 
 .separador__contenido-logo img {
@@ -769,6 +783,7 @@ section .subtitulo-parrafo {
 } */
 
 .separador__contenido-texto .parrafo {
+  /* border: 2px solid blue; */
   display: block;
   width: 100%;
 }
@@ -991,7 +1006,6 @@ div.info {
 }
 form {
   background: var(--bg-gradient);
-  border-radius: 8px !important;
 }
 @media (min-width: 768px) {
   .migrupo {
@@ -1054,7 +1068,7 @@ form {
 
 .redes-pie {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   justify-items: center;
   margin: auto;
   width: 85%;
