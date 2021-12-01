@@ -963,18 +963,16 @@ div.redes a i {
   color: var(--letras);
 }
 
-
-
 /* _____FORMULARIO________ */
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   #contacto {
-    height: 100vh;
+    height: 100%;
   }
   .contenedor-contacto {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 2rem;
+    grid-template-columns: 2fr 3fr;
+    gap: 1rem;
   }
 }
 .contenedor-contacto__micontacto {
@@ -1018,7 +1016,7 @@ form {
 }
 @media (min-width: 768px) {
   .migrupo {
-    display: flex;
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     width: 96%;
@@ -1042,6 +1040,7 @@ form {
 
 .piepagina-crf {
   background-color: var(--oscuro);
+  margin-top: 10rem;
 }
 
 @media (min-width: 768px) {
