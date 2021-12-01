@@ -443,26 +443,6 @@ a {
   top: 0;
 }
 
-  .menuppal__logo {
-    height: 15%;
-    width: 15%;
-    position: absolute;
-    top: 1%;
-    left: 1%;
-  }
-
-  @media (min-width: 768px) {
-    .menuppal__logo {
-      height: 20%;
-    }    
-  }
-
-  .menuppal__logo img {
-    width: 100%;
-    padding: 1.5rem;
-  }
-
-
 .menuppal a {
   align-items: center;
   color: var(--claro);
