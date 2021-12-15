@@ -78,6 +78,13 @@ body {
   }
 }
 
+@media (min-width: 4000px) {
+  .contenedor {
+    width: 65%;
+    max-width: 3500px;
+  }
+}
+
 h1 {
   font-family: var(--titulos);
   color: var(--letras);
