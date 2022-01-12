@@ -98,6 +98,22 @@ function myFunction() {
   };
 })();
 
+// ====================================================================
+
+//___Animación del título___
+(function () {
+
+  const titulo = document.querySelector('.titulo__principal');
+
+  window.addEventListener('scroll', () => {
+
+    const scroll = this.scrollY / 15 + 35;
+
+    titulo.style.top = `${scroll}%`;
+
+  });
+
+})();
 
 // ====================================================================
 
